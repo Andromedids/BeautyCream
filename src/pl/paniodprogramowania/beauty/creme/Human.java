@@ -11,7 +11,7 @@ public class Human {
     this.cream = cream;
   }
 
-  public void putOnCreme(){
+  public void putOnCream(){
     System.out.println("Poziom nawilżenia skóry przed zastosowaniem kremu wynosi " + this.skin.getLevelOfMoisture());
     int newLevelOfMoisture = this.cream.moisturize(this.skin.getLevelOfMoisture()); // miejsce polimorfizmu (użycia)
     this.skin.setLevelOfMoisture(newLevelOfMoisture);
